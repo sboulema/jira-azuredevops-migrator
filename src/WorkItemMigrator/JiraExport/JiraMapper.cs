@@ -12,7 +12,7 @@ using Migration.Common.Log;
 
 namespace JiraExport
 {
-    internal class JiraMapper : BaseMapper<JiraRevision>
+    public class JiraMapper : BaseMapper<JiraRevision>
     {
         private readonly JiraProvider _jiraProvider;
         private readonly Dictionary<string, FieldMapping<JiraRevision>> _fieldMappingsPerType;
@@ -33,7 +33,7 @@ namespace JiraExport
         /// <param name="field"></param>
         /// <param name="type"></param>
         /// <returns>True if link is added, false if it's not</returns>
-        private void AddRemoveSingleLink(JiraRevision r, List<WiLink> links, string field, string type)
+        public void AddRemoveSingleLink(IJiraRevision r, List<WiLink> links, string field, string type)
         {
             if (r.Fields.TryGetValue(field, out object value))
             {

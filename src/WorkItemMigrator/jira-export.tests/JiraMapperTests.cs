@@ -20,22 +20,16 @@ namespace JiraExport.Tests
         }
 
         [Test]
-        public void JiraMapperWhateverTest()
-        {
-
-            Assert.DoesNotThrow(Logger.Whatever);
-
-        }
-
-        [Test]
         public void JiraMapperAddRemoveSingleLinkTest()
         {            
             var dict = new Dictionary<string, object>
             {
-                { "Test", new object() }
+                { "Test", null }
             };
             var rev = Substitute.For<IJiraRevision>();
             rev.Fields.Returns(dict);
+            rev.Index.Returns(0);
+            
             var sut = new JiraMapper(null, new ConfigJson());
             sut.AddRemoveSingleLink(rev, null, "Test", null);
         }

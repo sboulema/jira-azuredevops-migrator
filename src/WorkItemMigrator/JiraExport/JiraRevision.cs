@@ -29,7 +29,7 @@ namespace JiraExport
 
         public string Author { get; set; }
 
-        public Dictionary<string, string> Fields { get; set; }
+        public Dictionary<string, object> Fields { get; set; }
         public List<RevisionAction<JiraLink>> LinkActions { get; set; }
 
         public List<RevisionAction<JiraAttachment>> AttachmentActions { get; set; }

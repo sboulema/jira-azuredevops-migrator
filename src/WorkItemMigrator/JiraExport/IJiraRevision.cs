@@ -7,7 +7,7 @@ namespace JiraExport
     {
         List<RevisionAction<JiraAttachment>> AttachmentActions { get; set; }
         string Author { get; set; }
-        Dictionary<string, string> Fields { get; set; }
+        Dictionary<string, object> Fields { get; set; }
         int Index { get; }
         List<RevisionAction<JiraLink>> LinkActions { get; set; }
         string OriginId { get; }

@@ -110,6 +110,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IJiraRevision.cs" />
     <Compile Include="JiraCommandLine.cs" />
     <Compile Include="JiraMapper.cs" />
     <Compile Include="JiraAttachment.cs" />

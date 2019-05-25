@@ -23,5 +23,3 @@ using System.Runtime.CompilerServices;
 [assembly: Guid("600e6ed8-49fd-46f0-8498-adeadaebdf6c")]
 [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyInformationalVersion("0.0.1")]
-
-[assembly: InternalsVisibleTo("JiraExport")]

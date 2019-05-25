@@ -23,13 +23,13 @@ namespace JiraExport
         }
     }
 
-    public class JiraRevision : ISourceRevision, IComparable<JiraRevision>
+    public class JiraRevision : ISourceRevision, IComparable<JiraRevision>, IJiraRevision
     {
         public DateTime Time { get; set; }
 
         public string Author { get; set; }
 
-        public Dictionary<string, object> Fields { get; set; }
+        public Dictionary<string, string> Fields { get; set; }
         public List<RevisionAction<JiraLink>> LinkActions { get; set; }
 
         public List<RevisionAction<JiraAttachment>> AttachmentActions { get; set; }

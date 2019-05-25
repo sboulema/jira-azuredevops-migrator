@@ -48,7 +48,7 @@ namespace Common.Config
         public bool IgnoreFailedLinks { get; set; } = false;
 
         [JsonProperty(PropertyName = "field-map", Required = Required.Always)]
-        public FieldMap FieldMap { get; set; }
+        public FieldMap FieldMap { get; set; } = new FieldMap();
 
         [JsonProperty(PropertyName = "process-template")]
         public string ProcessTemplate { get; set; } = "Scrum";
@@ -57,6 +57,6 @@ namespace Common.Config
         public TypeMap TypeMap { get; set; }
 
         [JsonProperty(PropertyName = "link-map", Required = Required.Always)]
-        public LinkMap LinkMap { get; set; }
+        public LinkMap LinkMap { get; set; } = new LinkMap();
     }
 }

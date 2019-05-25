@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
+using System.Runtime.CompilerServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
@@ -22,3 +23,5 @@ using System.Runtime.InteropServices;
 [assembly: Guid("600e6ed8-49fd-46f0-8498-adeadaebdf6c")]
 [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyInformationalVersion("0.0.1")]
+
+[assembly: InternalsVisibleTo("JiraExport")]
